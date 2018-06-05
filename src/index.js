@@ -107,7 +107,15 @@ class ani {
 		console.log(style);
 		if (this.k === 'transform') {
 			const matrix = style.match(/\(.+\)/g)[0].slice(1, -1).split(',')
-			// 根据公式来算
+            // 根据公式来算
+            // transform: matrix(1, 0, 0, 1, 30, 30); /* a=1, b=0, c=0, d=1, e=30, f=30 */
+            // 其中，x, y表示转换元素的  !!所有!!  坐标（变量）
+            // translateX: ax + cy + e
+            // translateY: bx + dy + f
+            // scaleX: sx
+            // scaleY: sy
+            // rotateX: x * cosθ - y * sinθ
+            // rotateY: x * sinθ + y * cosθ
 		}
         const start = this.getNumber(style);
         this.td !== null && (end *= this.td);
