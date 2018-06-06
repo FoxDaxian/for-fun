@@ -106,7 +106,10 @@ class ani {
         const style = this.getStyle(this.k);
 		console.log(style);
 		if (this.k === 'transform') {
-			const matrix = style.match(/\(.+\)/g)[0].slice(1, -1).split(',')
+            const matrix = style.match(/\(.+\)/g)[0].slice(1, -1).split(',')
+            
+		// http://www.cnblogs.com/shibaxiong/p/4673035.html 这个网站获取角度
+		// 张鑫旭 http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/
             // 根据公式来算
             // transform: matrix(1, 0, 0, 1, 30, 30); /* a=1, b=0, c=0, d=1, e=30, f=30 */
             // 其中，x, y表示转换元素的  !!所有!!  坐标（变量）
