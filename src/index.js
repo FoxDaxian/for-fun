@@ -108,6 +108,7 @@ class ani {
 		if (this.k === 'transform') {
             const matrix = style.match(/\(.+\)/g)[0].slice(1, -1).split(',')
             
+        // https://fanmingfei.com/posts/CSS3_Transform_Matrix_Intro.html 这个很全面
 		// http://www.cnblogs.com/shibaxiong/p/4673035.html 这个网站获取角度
 		// 张鑫旭 http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/
             // 根据公式来算
