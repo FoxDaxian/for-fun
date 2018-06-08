@@ -120,6 +120,8 @@ class ani {
             // scaleY: sy
             // rotateX: x * cosθ - y * sinθ
             // rotateY: x * sinθ + y * cosθ
+			// skewX: tan(c)
+			// skewY: tan(b)
 		}
         const start = this.getNumber(style);
         this.td !== null && (end *= this.td);
